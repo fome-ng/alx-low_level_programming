@@ -1,7 +1,7 @@
 #incude "main.h"
 
 /**
- * print _numbers - print numbers from 0 - 9
+ * print_most_numbers - print numbers except 2 ad 4
  * Return: void
  */
 
@@ -11,7 +11,8 @@ void print_most_numbers(void);
 
 	for (c = '0'; c <= '9'; c++)
 	{
-		_putchar(c);
+		if (!(c == '2' || c == '4'}))
+			_putchar(c);
 	}
 	_putchar ('\n');
 }
